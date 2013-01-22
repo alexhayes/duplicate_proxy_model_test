@@ -4,4 +4,5 @@ class Report(One):
     
     class Meta:
         proxy = True
+        app_label = 'duplicate_proxy_model_test.one'
     

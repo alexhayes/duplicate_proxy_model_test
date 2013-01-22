@@ -44,3 +44,12 @@ This management command can be run with the following:
 ```bash
 ./manage.py test_duplicate_names
 ```
+
+# THE FIX!!!
+
+Thanks to charettes and akaariai the solution is to [define app_label](https://docs.djangoproject.com/en/dev/ref/models/options/#app-label) 
+on your model.
+
+See [this commit](https://github.com/alexhayes/duplicate_proxy_model_test/commit/82803c6e41d6e8369c4e93859c20f12d3b834659)
+for an example of how this can be done.
+
